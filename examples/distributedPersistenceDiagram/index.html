@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../mergeTreeExTreeM/">
+        <link rel="prev" href="../ctBones/">
       
       
-        <link rel="next" href="../mergeTreePGA/">
+        <link rel="next" href="../dragon/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Merge Tree Feature Tracking - TTK Online Example Database</title>
+        <title>Distributed Persistence Diagram - TTK Online Example Database</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#merge-tree-feature-tracking" class="md-skip">
+        <a href="#distributed-persistence-diagram" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Merge Tree Feature Tracking
+              Distributed Persistence Diagram
             
           </span>
         </div>
@@ -477,10 +477,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../distributedPersistenceDiagram/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Distributed Persistence Diagram
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -491,6 +513,131 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pipeline-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipeline description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paraview" class="md-nav__link">
+    <span class="md-ellipsis">
+      ParaView
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance timing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance timing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disclaimer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disclaimer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measuring-time-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measuring time performance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-another-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using another dataset
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inputs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpython-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      C++/Python API
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -697,32 +844,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Merge Tree Feature Tracking
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../mergeTreeFeatureTracking/" class="md-nav__link">
         
   
   
@@ -733,80 +858,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pipeline-description" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pipeline description
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#paraview" class="md-nav__link">
-    <span class="md-ellipsis">
-      ParaView
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      Python code
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#inputs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Inputs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#outputs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Outputs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cpython-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      C++/Python API
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1635,6 +1686,57 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#performance-timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance timing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance timing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disclaimer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Disclaimer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measuring-time-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measuring time performance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-another-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using another dataset
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#inputs" class="md-nav__link">
     <span class="md-ellipsis">
       Inputs
@@ -1644,9 +1746,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#outputs" class="md-nav__link">
+  <a href="#output" class="md-nav__link">
     <span class="md-ellipsis">
-      Outputs
+      Output
     </span>
   </a>
   
@@ -1677,18 +1779,27 @@
 
 
 
-<h1 id="merge-tree-feature-tracking">Merge Tree Feature Tracking<a class="headerlink" href="#merge-tree-feature-tracking" title="Permanent link">&para;</a></h1>
-<p><img alt="Merge Tree Feature Tracking example Image" src="https://topology-tool-kit.github.io/img/gallery/mergeTreeFeatureTracking.jpg" /></p>
+<h1 id="distributed-persistence-diagram">Distributed Persistence Diagram<a class="headerlink" href="#distributed-persistence-diagram" title="Permanent link">&para;</a></h1>
+<p><img alt="DDMS example Image" src="https://topology-tool-kit.github.io/img/gallery/distributedPersistenceDiagram.jpg" /></p>
+<p>This toy example illustrates the computation of a persistence diagram in a distributed-memory context with MPI using the <a href="https://arxiv.org/abs/2505.21266">Distributed Discrete Morse Sandwich algorithm</a>. For more information on  the usage of TTK in a distributed-memory context, please see the example <a href="../mpiExample/">MPI example</a>.</p>
+<p>Please note both ParaView and TTK need to be compiled with MPI (using the CMake flags <code>PARAVIEW_USE_MPI=ON</code> and <code>TTK_ENABLE_MPI=ON</code> for ParaView and TTK respectively). TTK also requires to be compiled with OpenMP (using the CMake flag <code>TTK_ENABLE_OPENMP=ON</code>).
+For processing large-scale datasets (typically beyond <span class="arithmatex"><span class="MathJax_Preview">1024^3</span><script type="math/tex">1024^3</script></span>), we recommend to build TTK with 64 bit identifiers (by setting the CMake flag <code>TTK_ENABLE_64BIT_IDS=ON</code>). For performance benchmarks (e.g., for comparing computation times), TTK needs to be built with the advanced CMake option <code>TTK_ENABLE_MPI_TIME</code> enabled, in order to display precise computation time evaluations. See the <a href="#performance-timing">Performance timing</a> section below. </p>
+<p>The execution requires to set a thread support level of <code>MPI_THREAD_MULTIPLE</code> at runtime. For the library OpenMPI, this means setting the environment variable <code>OMPI_MPI_THREAD_LEVEL</code> to 3 (as shown in the examples below).</p>
 <h2 id="pipeline-description">Pipeline description<a class="headerlink" href="#pipeline-description" title="Permanent link">&para;</a></h2>
-<p>This example first loads two pairs of timesteps of an ensemble of scalar fields inside a cinema database from disk.</p>
-<p>Then, the <a href="https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html">MergeTree</a> is computed on each scalar field for the Split Tree.</p>
-<p>These two pairs of timesteps are given respectively to two <a href="https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html">MergeTreeClustering</a> filters to compute a distance between them.</p>
-<p>In terms of visualisation, the matching between the trees of the first pair and the trees of the second pair are visualized using their planar layout and their embedding in the data.</p>
-<p>The python script computes the matchings and saves the result (for each pair of trees).</p>
+<p>The produced visualization captures the persistence diagrams of each dimension (<span class="arithmatex"><span class="MathJax_Preview">D_0</span><script type="math/tex">D_0</script></span>, <span class="arithmatex"><span class="MathJax_Preview">D_1</span><script type="math/tex">D_1</script></span> and <span class="arithmatex"><span class="MathJax_Preview">D_2</span><script type="math/tex">D_2</script></span>, from left to right in the image).</p>
+<p>First, the data is loaded and the grid is resampled (to <span class="arithmatex"><span class="MathJax_Preview">128^3</span><script type="math/tex">128^3</script></span> by default). </p>
+<p>Then, a global ordering of the vertices is computed using the filter <a href="https://topology-tool-kit.github.io/doc/html/classttkArrayPreconditioning.html">ArrayPreconditioning</a>. This step will be triggered automatically if not explicitly called.</p>
+<p>Then, the persistence diagram is computed via <a href="https://topology-tool-kit.github.io/doc/html/PersistenceDiagram_8h.html">PersistenceDiagram</a> and more specifically the
+<a href="https://arxiv.org/abs/2505.21266">Distributed Discrete Morse Sandwich algorithm</a>
+(specified in the choice of software backend). Note that, in the output, each MPI process will create a dummy pair modeling the diagonal, which may need to be filtered out prior to subsequent processing (e.g., Wasserstein distance computation). This is achieved by the last step of the pipeline, involving thresholding (see the <a href="#Python-code">Python code</a> below).</p>
 <h2 id="paraview">ParaView<a class="headerlink" href="#paraview" title="Permanent link">&para;</a></h2>
-<p>To reproduce the above screenshot, go to your <a href="https://github.com/topology-tool-kit/ttk-data">ttk-data</a> directory and enter the following command:
-<div class="highlight"><pre><span></span><code>paraview<span class="w"> </span>states/mergeTreeFeatureTracking.pvsm
-</code></pre></div></p>
+<p>To reproduce the above screenshot on 2 processes and 4 threads, go to your <a href="https://github.com/topology-tool-kit/ttk-data">ttk-data</a> directory and enter the following command:</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">OMPI_MPI_THREAD_LEVEL</span><span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="nv">OMP_NUM_THREADS</span><span class="o">=</span><span class="m">4</span><span class="w"> </span>mpirun<span class="w"> </span>--bind-to<span class="w"> </span>none<span class="w"> </span>--map-by<span class="w"> </span>node<span class="w"> </span>-n<span class="w"> </span><span class="m">2</span><span class="w"> </span>pvserver<span class="w"> </span>
+</code></pre></div>
+In another command line enter the following command:
+<div class="highlight"><pre><span></span><code>paraview<span class="w"> </span>
+</code></pre></div>
+Now, follow the procedure described in paragraph <span class="arithmatex"><span class="MathJax_Preview">8.2.2</span><script type="math/tex">8.2.2</script></span> of the following <a href="https://docs.paraview.org/en/latest/ReferenceManual/parallelDataVisualization.html#configuring-a-server-connection">ParaView documentation</a> to connect your ParaView server to your client. Once that is done, you can open the state file <code>states/distributedPersistenceDiagram.pvsm</code> in the ParaView GUI through <code>File</code> &gt; <code>Load State</code>.</p>
 <h2 id="python-code">Python code<a class="headerlink" href="#python-code" title="Permanent link">&para;</a></h2>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -1727,156 +1838,81 @@
 <span class="normal">35</span>
 <span class="normal">36</span>
 <span class="normal">37</span>
-<span class="normal">38</span>
-<span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span>
-<span class="normal">46</span>
-<span class="normal">47</span>
-<span class="normal">48</span>
-<span class="normal">49</span>
-<span class="normal">50</span>
-<span class="normal">51</span>
-<span class="normal">52</span>
-<span class="normal">53</span>
-<span class="normal">54</span>
-<span class="normal">55</span>
-<span class="normal">56</span>
-<span class="normal">57</span>
-<span class="normal">58</span>
-<span class="normal">59</span>
-<span class="normal">60</span>
-<span class="normal">61</span>
-<span class="normal">62</span>
-<span class="normal">63</span>
-<span class="normal">64</span>
-<span class="normal">65</span>
-<span class="normal">66</span>
-<span class="normal">67</span>
-<span class="normal">68</span>
-<span class="normal">69</span>
-<span class="normal">70</span>
-<span class="normal">71</span>
-<span class="normal">72</span>
-<span class="normal">73</span>
-<span class="normal">74</span>
-<span class="normal">75</span>
-<span class="normal">76</span>
-<span class="normal">77</span>
-<span class="normal">78</span>
-<span class="normal">79</span>
-<span class="normal">80</span>
-<span class="normal">81</span>
-<span class="normal">82</span>
-<span class="normal">83</span>
-<span class="normal">84</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ch">#!/usr/bin/env python</span>
+<span class="normal">38</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ch">#!/usr/bin/env python</span>
 
 <span class="kn">from</span><span class="w"> </span><span class="nn">paraview.simple</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 
-<span class="c1"># create a new &#39;TTK CinemaReader&#39;</span>
-<span class="n">tTKCinemaReader1</span> <span class="o">=</span> <span class="n">TTKCinemaReader</span><span class="p">(</span><span class="n">DatabasePath</span><span class="o">=</span><span class="s2">&quot;./Isabel.cdb&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="n">dim</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">dim</span> <span class="o">=</span> <span class="mi">128</span>
 
-<span class="c1"># create a new &#39;TTK CinemaQuery&#39;</span>
-<span class="n">tTKCinemaQuery1</span> <span class="o">=</span> <span class="n">TTKCinemaQuery</span><span class="p">(</span><span class="n">InputTable</span><span class="o">=</span><span class="n">tTKCinemaReader1</span><span class="p">)</span>
-<span class="n">tTKCinemaQuery1</span><span class="o">.</span><span class="n">SQLStatement</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;SELECT * FROM InputTable0</span>
-<span class="s2">WHERE TimeStep == 2 or TimeStep == 32&quot;&quot;&quot;</span>
+<span class="c1"># create a new &#39;XML Image Data Reader&#39;</span>
+<span class="n">backpack</span> <span class="o">=</span> <span class="n">XMLImageDataReader</span><span class="p">(</span><span class="n">FileName</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;backpack.vti&quot;</span><span class="p">])</span>
 
-<span class="c1"># create a new &#39;TTK CinemaProductReader&#39;</span>
-<span class="n">tTKCinemaProductReader1</span> <span class="o">=</span> <span class="n">TTKCinemaProductReader</span><span class="p">(</span><span class="n">Input</span><span class="o">=</span><span class="n">tTKCinemaQuery1</span><span class="p">)</span>
+<span class="c1"># create a new &#39;Resample To Image&#39;</span>
+<span class="n">resampleToImage1</span> <span class="o">=</span> <span class="n">ResampleToImage</span><span class="p">(</span><span class="n">Input</span><span class="o">=</span><span class="n">backpack</span><span class="p">)</span>
+<span class="n">resampleToImage1</span><span class="o">.</span><span class="n">SamplingDimensions</span> <span class="o">=</span> <span class="p">[</span><span class="n">dim</span><span class="p">,</span> <span class="n">dim</span><span class="p">,</span> <span class="n">dim</span><span class="p">]</span>
+<span class="n">resampleToImage1</span><span class="o">.</span><span class="n">SamplingBounds</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">511.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">511.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">372.0</span><span class="p">]</span>
 
-<span class="c1"># create a new &#39;TTK Merge and Contour Tree&#39;</span>
-<span class="n">tTKMergeandContourTreeFTM4</span> <span class="o">=</span> <span class="n">TTKMergeTree</span><span class="p">(</span><span class="n">Input</span><span class="o">=</span><span class="n">tTKCinemaProductReader1</span><span class="p">)</span>
-<span class="n">tTKMergeandContourTreeFTM4</span><span class="o">.</span><span class="n">ScalarField</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;POINTS&quot;</span><span class="p">,</span> <span class="s2">&quot;velocityMag&quot;</span><span class="p">]</span>
-<span class="n">tTKMergeandContourTreeFTM4</span><span class="o">.</span><span class="n">TreeType</span> <span class="o">=</span> <span class="s2">&quot;Split Tree&quot;</span>
+<span class="n">tTKArrayPreconditioning</span> <span class="o">=</span> <span class="n">TTKArrayPreconditioning</span><span class="p">(</span><span class="n">Input</span><span class="o">=</span><span class="n">resampleToImage1</span><span class="p">)</span>
+<span class="n">tTKArrayPreconditioning</span><span class="o">.</span><span class="n">PointDataArrays</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;ImageFile&quot;</span><span class="p">]</span>
 
-<span class="c1"># create a new &#39;TTK BlockAggregator&#39;</span>
-<span class="n">tTKBlockAggregator1</span> <span class="o">=</span> <span class="n">TTKBlockAggregator</span><span class="p">(</span>
-    <span class="n">Input</span><span class="o">=</span><span class="p">[</span>
-        <span class="n">tTKMergeandContourTreeFTM4</span><span class="p">,</span>
-        <span class="n">OutputPort</span><span class="p">(</span><span class="n">tTKMergeandContourTreeFTM4</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-        <span class="n">OutputPort</span><span class="p">(</span><span class="n">tTKMergeandContourTreeFTM4</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
-    <span class="p">]</span>
-<span class="p">)</span>
-<span class="n">tTKBlockAggregator1</span><span class="o">.</span><span class="n">FlattenInput</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1"># create a new &#39;TTK PersistenceDiagram&#39;</span>
+<span class="n">tTKPersistenceDiagram1</span> <span class="o">=</span> <span class="n">TTKPersistenceDiagram</span><span class="p">(</span><span class="n">Input</span><span class="o">=</span><span class="n">tTKArrayPreconditioning</span><span class="p">)</span>
+<span class="n">tTKPersistenceDiagram1</span><span class="o">.</span><span class="n">ScalarField</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;POINTS&quot;</span><span class="p">,</span> <span class="s2">&quot;ImageFile&quot;</span><span class="p">]</span>
+<span class="n">tTKPersistenceDiagram1</span><span class="o">.</span><span class="n">Backend</span> <span class="o">=</span> <span class="s2">&quot;Distributed Discrete Morse Sandwich&quot;</span>
 
-<span class="c1"># create a new &#39;TTK MergeTreeClustering&#39;</span>
-<span class="n">tTKMergeTreeClustering3</span> <span class="o">=</span> <span class="n">TTKMergeTreeClustering</span><span class="p">(</span>
-    <span class="n">Input</span><span class="o">=</span><span class="n">tTKBlockAggregator1</span><span class="p">,</span> <span class="n">OptionalInputclustering</span><span class="o">=</span><span class="kc">None</span>
-<span class="p">)</span>
-<span class="n">tTKMergeTreeClustering3</span><span class="o">.</span><span class="n">Deterministic</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">tTKMergeTreeClustering3</span><span class="o">.</span><span class="n">DimensionSpacing</span> <span class="o">=</span> <span class="mf">0.1</span>
-<span class="n">tTKMergeTreeClustering3</span><span class="o">.</span><span class="n">DimensionToshift</span> <span class="o">=</span> <span class="s2">&quot;Y&quot;</span>
-<span class="n">tTKMergeTreeClustering3</span><span class="o">.</span><span class="n">Epsilon1</span> <span class="o">=</span> <span class="mf">20.0</span>
-<span class="n">tTKMergeTreeClustering3</span><span class="o">.</span><span class="n">Epsilon2</span> <span class="o">=</span> <span class="mf">100.0</span>
-<span class="n">tTKMergeTreeClustering3</span><span class="o">.</span><span class="n">Epsilon3</span> <span class="o">=</span> <span class="mf">100.0</span>
-<span class="n">tTKMergeTreeClustering3</span><span class="o">.</span><span class="n">PersistenceThreshold</span> <span class="o">=</span> <span class="mf">2.0</span>
-<span class="n">tTKMergeTreeClustering3</span><span class="o">.</span><span class="n">ImportantPairs</span> <span class="o">=</span> <span class="mf">20.0</span>
-<span class="n">tTKMergeTreeClustering3</span><span class="o">.</span><span class="n">ImportantPairsSpacing</span> <span class="o">=</span> <span class="mf">20.0</span>
-<span class="n">tTKMergeTreeClustering3</span><span class="o">.</span><span class="n">NonImportantPairsProximity</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="c1"># remove the dummy pairs representing the diagonal</span>
+<span class="n">threshold1</span> <span class="o">=</span> <span class="n">Threshold</span><span class="p">(</span><span class="n">Input</span><span class="o">=</span><span class="n">tTKPersistenceDiagram1</span><span class="p">)</span>
+<span class="n">threshold1</span><span class="o">.</span><span class="n">Scalars</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;CELLS&#39;</span><span class="p">,</span> <span class="s1">&#39;PairType&#39;</span><span class="p">]</span>
+<span class="n">threshold1</span><span class="o">.</span><span class="n">UpperThreshold</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">threshold1</span><span class="o">.</span><span class="n">ThresholdMethod</span> <span class="o">=</span> <span class="s1">&#39;Above Upper Threshold&#39;</span>
 
-<span class="c1"># create a new &#39;TTK CinemaQuery&#39;</span>
-<span class="n">tTKCinemaQuery2</span> <span class="o">=</span> <span class="n">TTKCinemaQuery</span><span class="p">(</span><span class="n">InputTable</span><span class="o">=</span><span class="n">tTKCinemaReader1</span><span class="p">)</span>
-<span class="n">tTKCinemaQuery2</span><span class="o">.</span><span class="n">SQLStatement</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;SELECT * FROM InputTable0</span>
-<span class="s2">WHERE TimeStep == 32 or TimeStep == 45&quot;&quot;&quot;</span>
+<span class="n">UpdatePipeline</span><span class="p">()</span>
 
-<span class="c1"># create a new &#39;TTK CinemaProductReader&#39;</span>
-<span class="n">tTKCinemaProductReader2</span> <span class="o">=</span> <span class="n">TTKCinemaProductReader</span><span class="p">(</span><span class="n">Input</span><span class="o">=</span><span class="n">tTKCinemaQuery2</span><span class="p">)</span>
-<span class="n">tTKCinemaProductReader2</span><span class="o">.</span><span class="n">AddFieldDataRecursively</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="c1"># To save the output to disk, uncomment the line below.</span>
+<span class="c1"># SaveData(&#39;diagram.pvtu&#39;, proxy=threshold1)</span>
 
-<span class="c1"># create a new &#39;TTK Merge and Contour Tree&#39;</span>
-<span class="n">tTKMergeandContourTreeFTM5</span> <span class="o">=</span> <span class="n">TTKMergeTree</span><span class="p">(</span><span class="n">Input</span><span class="o">=</span><span class="n">tTKCinemaProductReader2</span><span class="p">)</span>
-<span class="n">tTKMergeandContourTreeFTM5</span><span class="o">.</span><span class="n">ScalarField</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;POINTS&quot;</span><span class="p">,</span> <span class="s2">&quot;velocityMag&quot;</span><span class="p">]</span>
-<span class="n">tTKMergeandContourTreeFTM5</span><span class="o">.</span><span class="n">TreeType</span> <span class="o">=</span> <span class="s2">&quot;Split Tree&quot;</span>
-
-<span class="c1"># create a new &#39;TTK BlockAggregator&#39;</span>
-<span class="n">tTKBlockAggregator2</span> <span class="o">=</span> <span class="n">TTKBlockAggregator</span><span class="p">(</span>
-    <span class="n">Input</span><span class="o">=</span><span class="p">[</span>
-        <span class="n">tTKMergeandContourTreeFTM5</span><span class="p">,</span>
-        <span class="n">OutputPort</span><span class="p">(</span><span class="n">tTKMergeandContourTreeFTM5</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
-        <span class="n">OutputPort</span><span class="p">(</span><span class="n">tTKMergeandContourTreeFTM5</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
-    <span class="p">]</span>
-<span class="p">)</span>
-<span class="n">tTKBlockAggregator2</span><span class="o">.</span><span class="n">FlattenInput</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="c1"># create a new &#39;TTK MergeTreeClustering&#39;</span>
-<span class="n">tTKMergeTreeClustering4</span> <span class="o">=</span> <span class="n">TTKMergeTreeClustering</span><span class="p">(</span>
-    <span class="n">Input</span><span class="o">=</span><span class="n">tTKBlockAggregator2</span><span class="p">,</span> <span class="n">OptionalInputclustering</span><span class="o">=</span><span class="kc">None</span>
-<span class="p">)</span>
-<span class="n">tTKMergeTreeClustering4</span><span class="o">.</span><span class="n">Deterministic</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">tTKMergeTreeClustering4</span><span class="o">.</span><span class="n">DimensionSpacing</span> <span class="o">=</span> <span class="mf">0.1</span>
-<span class="n">tTKMergeTreeClustering4</span><span class="o">.</span><span class="n">DimensionToshift</span> <span class="o">=</span> <span class="s2">&quot;Y&quot;</span>
-<span class="n">tTKMergeTreeClustering4</span><span class="o">.</span><span class="n">PersistenceThreshold</span> <span class="o">=</span> <span class="mf">2.0</span>
-<span class="n">tTKMergeTreeClustering4</span><span class="o">.</span><span class="n">ImportantPairs</span> <span class="o">=</span> <span class="mf">23.0</span>
-<span class="n">tTKMergeTreeClustering4</span><span class="o">.</span><span class="n">ImportantPairsSpacing</span> <span class="o">=</span> <span class="mf">20.0</span>
-<span class="n">tTKMergeTreeClustering4</span><span class="o">.</span><span class="n">NonImportantPairsProximity</span> <span class="o">=</span> <span class="mf">0.2</span>
-
-<span class="c1"># save the output</span>
-<span class="n">SaveData</span><span class="p">(</span><span class="s2">&quot;matching_T2_T32.vtm&quot;</span><span class="p">,</span> <span class="n">OutputPort</span><span class="p">(</span><span class="n">tTKMergeTreeClustering3</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-<span class="n">SaveData</span><span class="p">(</span><span class="s2">&quot;matching_T32_T45.vtm&quot;</span><span class="p">,</span> <span class="n">OutputPort</span><span class="p">(</span><span class="n">tTKMergeTreeClustering4</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="c1"># WARNING: due to a reported ParaView issue, when saving the output to disk in</span>
+<span class="c1"># MPI mode, pvbatch will execute the pipeline twice in a row (instead of one).</span>
 </code></pre></div></td></tr></table></div>
-<p>To run the above Python script, go to your <a href="https://github.com/topology-tool-kit/ttk-data">ttk-data</a> directory and enter the following command:
-<div class="highlight"><pre><span></span><code>pvpython<span class="w"> </span>python/mergeTreeFeatureTracking.py
+<p>To run the above Python script using 4 threads and 2 processes, go to your <a href="https://github.com/topology-tool-kit/ttk-data">ttk-data</a> directory and enter the following command:
+<div class="highlight"><pre><span></span><code><span class="nv">OMPI_MPI_THREAD_LEVEL</span><span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="nv">OMP_NUM_THREADS</span><span class="o">=</span><span class="m">4</span><span class="w"> </span>mpirun<span class="w"> </span>--bind-to<span class="w"> </span>none<span class="w"> </span>--map-by<span class="w"> </span>node<span class="w"> </span>-n<span class="w"> </span><span class="m">2</span><span class="w"> </span>pvbatch<span class="w"> </span>python/distributedPersistenceDiagram.py<span class="w"> </span>
 </code></pre></div></p>
+<p>By default, the dataset is resampled to <span class="arithmatex"><span class="MathJax_Preview">128^3</span><script type="math/tex">128^3</script></span>. To resample to a higher dimension, for example <span class="arithmatex"><span class="MathJax_Preview">256^3</span><script type="math/tex">256^3</script></span>, enter the following command:</p>
+<p><div class="highlight"><pre><span></span><code><span class="nv">OMPI_MPI_THREAD_LEVEL</span><span class="o">=</span><span class="m">3</span><span class="w"> </span><span class="nv">OMP_NUM_THREADS</span><span class="o">=</span><span class="m">4</span><span class="w"> </span>mpirun<span class="w"> </span>--bind-to<span class="w"> </span>none<span class="w"> </span>--map-by<span class="w"> </span>node<span class="w"> </span>-n<span class="w"> </span><span class="m">2</span><span class="w"> </span>pvbatch<span class="w"> </span>python/distributedPersistenceDiagram.py<span class="w"> </span><span class="m">256</span>
+</code></pre></div>
+Be aware that this may require too much memory to execute on a regular laptop.</p>
+<h2 id="performance-timing">Performance timing<a class="headerlink" href="#performance-timing" title="Permanent link">&para;</a></h2>
+<h3 id="disclaimer">Disclaimer<a class="headerlink" href="#disclaimer" title="Permanent link">&para;</a></h3>
+<p>The distributed computation of persistence diagram has been evaluated on Sorbonne Universite's supercomputers. Therefore, the parameters of our <a href="https://arxiv.org/abs/2505.21266">algorithm</a> have been tuned for this system and they might yield slightly different performances on a different supercomputer. </p>
+<h3 id="run-configuration">Run configuration<a class="headerlink" href="#run-configuration" title="Permanent link">&para;</a></h3>
+<p>When using the above Python script with <code>pvbatch</code>, please make sure to adjust to your hardware the number of processes (<code>-n</code> option) and threads (<code>OMP_NUM_THREADS</code> variable). 
+Note that TTK will default to a minimum number of 2 threads (to account for one communication thread) if the variable <code>OMP_NUM_THREADS</code> is set to a value smaller than 2.</p>
+<p>For optimal performances, we recommend to use as many MPI processes as  compute nodes (mapping one MPI process per node, see the <code>--map-by node</code> option in the above command line), and as many threads as (virtual) cores per node (in conjunction with the <code>--bind-to none</code> option in the above command line). Also, for load balancing purposes, we recommend to use a number of processes (<code>-n</code> option) which is a power of 2 (e.g., 2, 4, 8, 16, 32, 64, etc.).</p>
+<h3 id="measuring-time-performance">Measuring time performance<a class="headerlink" href="#measuring-time-performance" title="Permanent link">&para;</a></h3>
+<p>For a precise time performance measurement, TTK needs to be built with the advanced CMake option <code>TTK_ENABLE_MPI_TIME</code> enabled.</p>
+<p>In the terminal output, 
+the full execution time of the distributed persistence computation (excluding IO) can be obtained by summing the times reported by the three following steps (<code>4.11599</code> seconds overall in this example):</p>
+<ul>
+<li><code>[ArrayPreconditioning-0] Array preconditioning performed using 2 MPI processes lasted: 0.047390</code></li>
+<li><code>[DiscreteGradient-0] Computation performed using 2 MPI processes lasted: 2.172824</code></li>
+<li><code>[DiscreteMorseSandwichMPI-0] Computation of persistence pairs performed using 2 MPI processes lasted: 1.895776</code></li>
+</ul>
+<h3 id="using-another-dataset">Using another dataset<a class="headerlink" href="#using-another-dataset" title="Permanent link">&para;</a></h3>
+<p>To load another dataset, replace the string <code>backpack.vti</code> in the above Python script with the path to your input VTI file and run the script with <code>pvbatch</code> as described above.</p>
 <h2 id="inputs">Inputs<a class="headerlink" href="#inputs" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://github.com/topology-tool-kit/ttk-data/tree/dev/Isabel.cdb">Isabel.cdb</a>: a cinema database containing 12 regular grids.</li>
+<li><a href="https://github.com/topology-tool-kit/ttk-data/raw/dev/backpack.vti">backpack.vti</a>:  A CT scan of a backpack filled with items.</li>
 </ul>
-<h2 id="outputs">Outputs<a class="headerlink" href="#outputs" title="Permanent link">&para;</a></h2>
+<h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>matching_T2_T32.vtm</code>: the output matching between timestep 2 and 32.</li>
-<li><code>matching_T32_T45.vtm</code>: the output matching between timestep 32 and 45.</li>
+<li><code>diagram.pvtu</code>: the persistence diagram of the backpack dataset.</li>
 </ul>
 <h2 id="cpython-api">C++/Python API<a class="headerlink" href="#cpython-api" title="Permanent link">&para;</a></h2>
-<p><a href="https://topology-tool-kit.github.io/doc/html/classttkBlockAggregator.html">BlockAggregator</a></p>
-<p><a href="https://topology-tool-kit.github.io/doc/html/classttkCinemaProductReader.html">CinemaProductReader</a></p>
-<p><a href="https://topology-tool-kit.github.io/doc/html/classttkCinemaQuery.html">CinemaQuery</a></p>
-<p><a href="https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html">CinemaReader</a></p>
-<p><a href="https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html">MergeTree</a></p>
-<p><a href="https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html">MergeTreeClustering</a></p>
+<p><a href="https://topology-tool-kit.github.io/doc/html/classttkArrayPreconditioning.html">ArrayPreconditioning</a></p>
+<p><a href="https://topology-tool-kit.github.io/doc/html/PersistenceDiagram_8h.html">PersistenceDiagram</a></p>
 
 
 
